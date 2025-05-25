@@ -41,7 +41,7 @@ class Autocomplete {
 
 			const data = await response.json()
 			const arr = data.items.slice(0, 5)
-
+			this.Markup.createUl.replaceChildren()
 			for (let rep of arr) {
 				const li = document.createElement('li')
 				li.classList.add('li-markup')
